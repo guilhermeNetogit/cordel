@@ -1,0 +1,7 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+h1 {
+    font: italic bolder 3em "Passion One", cursive;
+    color: #2c3e50;
+}
