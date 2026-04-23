@@ -1,7 +1,109 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
-h1 {
-    font: italic bolder 3em "Passion One", cursive;
-    color: #2c3e50;
+@font-face {
+    font-family: 'Xilosa';
+    src: url('../_fontes/xilosa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Xilosa', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-image: url(../_imagens/linho.png);
+    text-align: center;
+    color: #605234;
+}
+
+header > h1 {
+    font: italic bolder 1em var(--fonte2);
+    font-variant: small-caps;
+    font-size: 8vw;
+    color: #954420;
+    text-shadow: 3px 3px 5px black;
+    padding-top: 50px;
+}
+
+header > p {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: 2vw;
+}
+
+header a, footer a {
+    color: #954420;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: #fffaee;
+    padding-left: 35px;
+}
+
+section.imagem {
+    background-color: #3e2a22e2;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(../_imagens/background01.jpg);
+    background-position: center center;
+    background-size: contain; 
+
+}
+
+section#img02 {
+    background-image: url(../_imagens/background02.jpg);
+}
+
+footer {
+    background-color: #bb9b7cca;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
